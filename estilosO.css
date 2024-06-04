@@ -1,0 +1,268 @@
+#contenedor{
+    border:5px solid limegreen;   /* Colocamos un borde que indica los limites del todo el contenedor*/
+}
+
+
+#cabecera{   
+
+    background-color:hsla(92.045, 60%, 29%, 0.9); /*color de fondo de un elemento - contenedor div=cabecera*/
+    padding: 30px;
+    text-align: center;
+}
+
+
+
+.derecho {
+    position: sticky;
+    top: 100px;
+	float:right; /* Propiedad flotante css, especifica cómo debe flotar un elemento*/
+    width:20%; /*Ancho sección menu*/
+    text-align:center; /*Alineación del text*/
+    padding:20px; /* Relleno */
+	background-color:hsla(286.667, 69%, 43%, 0.8); /*color morado con opacidad hsla*/
+
+    height: 100%;/* altura */
+    margin-top:7px; /*Margen superior*/	
+}
+* {
+    box-sizing: border-box; /*La box-sizingpropiedad CSS nos permite incluir el relleno y el borde en el ancho y alto total de un elemento*/
+  }
+.cuerpo{
+background-color: hsla(272.727, 100%, 37%,0.8);
+padding: 30px;
+text-align: justify;
+height: 100%;/* altura */
+margin-top:7px; /*Margen superior*/
+float:left; /* permite al elemento main flotar en una posicion*/
+width:80%; /* anchura del elemento */
+
+
+}
+
+
+#alinear{
+    display: flex;
+    
+    margin: 7px;
+    }
+
+
+
+ @media only screen and (max-width:720px) { /*consulta de medios especificando aplicar condiciones a la pantalla , en este caso 
+	un ancho máximo de 620px para adaptarse y no se distorsionen los elementos que hay en ella*/
+	   .derecho, .cuerpo {   /* se consideran los divs que hacen la función para maquetar nuestra página, utilizando las clases .menu, .main, .right 
+	  que seran ordenados y adaptados a la pantalla */
+		width:100%;
+        height: auto;
+
+        
+        
+	  }   
+    .imagen{
+        height: 20%;
+        width: auto;
+    }
+    
+     
+    .video{
+
+        width:100%;
+        height: 100%;
+        
+
+    }
+
+    table{
+
+        width:100%;
+        max-width:400px;
+    }
+
+}
+.video{
+    width: 50%;
+    height: 278px;
+
+}
+.personajes{
+    width: 90%;
+    max-width: 500px;
+}
+.img{
+    width: 25%;
+    max-width: 500px;
+}
+#mapa{
+
+        width:70%;
+        max-width:auto;
+    }
+
+.pie{
+background-color:hsla(92.045, 60%, 29%, 0.5);
+text-align: center;
+padding: 10px;  
+}
+
+body{
+    background-image: url("Imagenes/Fondo.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+}
+#Logo{
+    margin-top: 2%;
+        width: auto;
+        max-width: 15%;
+        height: auto;
+        float: left;
+    }
+.derecho a {
+    background-color: hsla(0.19turn, 100%, 50%, 0.5);
+    padding: 7px;
+    margin-top: 7px;
+    display: block;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+.derecho a:hover{
+    background-color: hsla(207.585, 96%, 10%, 0.2);
+    color: black;
+}
+.pie a {
+    background-color: hsla(0.19turn, 100%, 50%, 0.5);
+    padding: 7px;
+    margin-top: 7px;
+    display: block;
+    width: auto;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+.pie a:hover{
+    background-color: hsla(207.585, 96%, 10%, 0.2);
+    color: black;
+}
+h1{
+    font-style: oblique;
+    font-size: 50px;
+    color: white;
+}
+h2, h3, h4, h5, h6{
+    font-weight: bolder;
+    font-size: 25px;
+    color: white;
+    text-decoration: underline darkblue;
+}
+h7{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    color: white;
+    text-decoration: underline darkblue;
+    display: flex;
+}
+h8{text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+    color: black;
+    text-decoration: underline darkblue;
+    display: flex;
+}
+h9{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+    text-decoration: underline darkblue;
+    display: flex;
+}
+p{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+    display: flex;
+}
+.a{ width: auto;
+    height: auto;
+    border-collapse:    collapse;
+    display: flex;
+    }
+
+td, th{border: 3px solid black;
+    text-align: center;   
+}
+/*Efecto*/
+.modalmask {
+    position: fixed;
+    font-family: bolder;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalmask:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+/*Formato de la ventana*/
+.modalbox{
+    width: 900px;
+    height: 75%;
+    position: relative;
+    top: 0px;
+    padding: 5px 20px 13px 20px;
+    background: #303030;
+    border-radius:3px;
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;
+    overflow: auto;
+}
+
+/*Movimientos*/
+.movedown {
+    margin: 0 auto;
+}
+ 
+.modalmask:target .movedown{       
+    margin:10% auto;
+}
+
+
+/*Boton de cerrar*/
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: 1px;
+    text-align: center;
+    top: 1px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius:3px;
+ 
+}
+ 
+.close:hover {
+    background: #FAAC58;
+    color:#222;
+}
+.t{
+    width: 40%;
+}

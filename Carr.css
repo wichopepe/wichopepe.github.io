@@ -1,0 +1,147 @@
+.carrousel{
+    background-color: hsla(272.727, 100%, 37%,0.8);;
+    width: 100%;
+}
+
+.conteCarrousel{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+@media only screen and (max-width:300px) {
+    .carrousel,.conteCarrousel,.itemCarrousel,.itemCarrouselArrows,.itemCarrouselTarjeta,.conteCarrouselController,
+    #itemCarrousel-1
+}
+.itemCarrousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselTarjeta{
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselArrows{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; 
+}
+
+.itemCarrouselArrows > i:hover {
+    cursor: pointer;
+}
+
+#itemCarrousel-1{
+    background-color:hsla(2,100%,50%,0.7);
+}
+
+#itemCarrousel-2{
+    background-color:hsla(192,100%,50%,0.7);
+}
+
+#itemCarrousel-3{
+    background-color:hsla(192,100%,50%,0.7);
+}
+
+#itemCarrousel-4{
+    background-color:hsla(2,100%,50%,0.7);
+}
+
+#itemCarrousel-5{
+    background-color:hsla(192,100%,50%,0.7);
+}
+
+#itemCarrousel-6{
+    background-color:hsla(192,100%,50%,0.7);
+}
+
+#itemCarrousel-7{
+    background-color:hsla(2,100%,50%,0.7);
+}
+
+#itemCarrousel-8{
+    background-color:hsla(192,100%,50%,0.7);
+}
+
+#itemCarrousel-9{
+    background-color:hsla(192,100%,50%,0.7);
+}
+
+#itemCarrousel-10{
+    background-color:hsla(2,100%,50%,0.7);
+}
+
+#itemCarrousel-11{
+    background-color:hsla(192,100%,50%,0.7);
+}
+
+#itemCarrousel-12{
+    background-color:hsla(192,100%,50%,0.7);
+}
+
+#itemCarrousel-13{
+    background-color:hsla(2,100%,50%,0.7);
+}
+
+#itemCarrousel-14{
+    background-color:hsla(192,100%,50%,0.7);
+}
+
+#itemCarrousel-15{
+    background-color:hsla(192,100%,50%,0.7);
+}
+
+#itemCarrousel-16{
+    background-color:hsla(2,100%,50%,0.7);
+}
+
+#itemCarrousel-17{
+    background-color:hsla(192,100%,50%,0.7);
+}
+
+#itemCarrousel-18{
+    background-color:hsla(192,100%,50%,0.7);
+}
+
+.conteCarrouselController{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.conteCarrouselController > a{
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+}
+
+.itemCarrouselArrows > a > i{
+    color: white;
+}
+
+
+.img{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+     width:60%;
+    height:30%;
+}
+
+.class1{
+    width:400px;
+    height:380px;
+    max-width: 600;
+    padding:20px; 
+
+}
